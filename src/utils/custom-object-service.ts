@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+const MAIN_CTP_PROJECT_KEY = process.env.CTP_PROJECT_KEY ?? 'demo-connector-app'; // Set a fallback value if the env variable is not set.
 
 export const fetchSelectedAttributes = async (
   authToken: string,
@@ -7,7 +8,7 @@ export const fetchSelectedAttributes = async (
 ) => {
   try {
     const response = await axios.get(
-      `https://api.australia-southeast1.gcp.commercetools.com/tiny_mc_demo/custom-objects/selectedAttributes/${productId}`,
+      `https://api.australia-southeast1.gcp.commercetools.com/${MAIN_CTP_PROJECT_KEY}/custom-objects/selectedAttributes/${productId}`,
       {
         headers: {
           Authorization: `Bearer ${authToken}`,
@@ -29,7 +30,7 @@ export const saveSelectedAttributesToCustomObject = async (
 ) => {
   try {
     await axios.post(
-      `https://api.australia-southeast1.gcp.commercetools.com/tiny_mc_demo/custom-objects`,
+      `https://api.australia-southeast1.gcp.commercetools.com/${MAIN_CTP_PROJECT_KEY}/custom-objects`,
       {
         container: 'selectedAttributes',
         key: productId,

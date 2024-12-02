@@ -37,6 +37,7 @@ export default function TinyEditor() {
     const context1 = useCustomViewContext();
     const productId = context1.hostUrl.split("products/")[1]
     // const productId = '9eb16815-46ae-4500-96b2-6a961bc61845';
+    const NEW_TINY_MC_API_KEY = process.env.TINY_MCE_API_KEY || "cpk2o1lsm175buob70medg0j2lcnzbb93ogslt3gzfycwq5q"
     const context = useApplicationContext();
     const API_URL = useApplicationContext(
         (context) => (context.environment as unknown as CustomApplicationRuntimeEnvironment).apiUrl
@@ -320,7 +321,7 @@ export default function TinyEditor() {
             {!showSettings && <div>
                 <h3 style={{ margin: "20px 0 20px 0" }}>Product Description</h3>
                 <Editor
-                    apiKey="wfuimxom2tl3bzeesblvkd2cqt9psx48srxnofonkgw38n4k"
+                    apiKey={NEW_TINY_MC_API_KEY}
                     init={{
                         plugins: [
                             'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
@@ -342,7 +343,7 @@ export default function TinyEditor() {
                     <div key={attributeName}>
                         <h4 style={{ margin: "20px 0 20px 0" }}>{attributeName}</h4>
                         <Editor
-                            apiKey="wfuimxom2tl3bzeesblvkd2cqt9psx48srxnofonkgw38n4k"
+                            apiKey={NEW_TINY_MC_API_KEY}
                             init={{
                                 plugins: [
                                     'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
