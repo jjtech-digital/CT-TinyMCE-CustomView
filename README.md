@@ -72,14 +72,13 @@ Once you have the API key, add it to the relevant configuration file or environm
 <img width="1400" alt="Screenshot 2024-08-13 at 5 11 53 PM" src="https://github.com/user-attachments/assets/2235c14f-8001-4bde-a96c-82015012c9d2">
 
 - **Select a repository**: Choose the repository and branch where your React app is stored.
-<img width="1400" alt="Screenshot 2024-08-13 at 5 12 46 PM" src="https://github.com/user-attachments/assets/408ae2f6-4aba-4ad1-8fbd-d5c020525408">
+<img width="1400" alt="Screenshot 2024-08-13 at 5 12 46 PM" src="https://github.com/user-attachments/assets/016f2e8f-925a-4afc-abd1-0a4dc99ec30b">
 
 
 - **Configure build settings**:
     - Amplify will automatically detect your React app and suggest a build configuration.
     - You can review or edit the build settings. If needed, you can specify the build command (npm run build) and the directory where the build output is located (build or dist or public).
-<img width="1400" alt="Screenshot 2024-08-13 at 5 13 33 PM" src="https://github.com/user-attachments/assets/cf9bfe46-1970-4a5f-93e0-e489d6829270">
-
+<img width="1400" alt="Screenshot 2024-08-13 at 5 13 33 PM" src="https://github.com/user-attachments/assets/91d6be1c-9572-4294-ab2d-b4d17c78b7b0">
 
 ### Step 4. Configure App Settings
 - **Environment variables**: If your React app requires environment variables, add them in the "Environment Variables" section.
@@ -87,10 +86,11 @@ Once you have the API key, add it to the relevant configuration file or environm
 
 ### Step 5. Deploy the App
 - **Deploy**: Click Save and deploy. AWS Amplify will build your app and deploy it to a globally available CDN (via Amazon CloudFront).
-<img width="1400" alt="Screenshot 2024-08-13 at 5 14 19 PM" src="https://github.com/user-attachments/assets/789152fe-3d9b-42a5-8508-a1b88f1a2da2">
+<img width="1400" alt="Screenshot 2024-08-13 at 5 14 19 PM" src="https://github.com/user-attachments/assets/3c61f5d3-9234-4745-8710-829706628a70">
 
 - **Monitor the deployment**: The Amplify Console will show the progress of your deployment. Once the deployment is complete, your app will be live.
+<img width="1400" alt="Screenshot 2024-08-13 at 5 14 19 PM" src="https://github.com/user-attachments/assets/9f3b29bb-694f-45c7-881f-23088ff29580">
 
 This will deploy your custom application on AWS Amplify and provide you with a domain link.
 
-Finally, update the CUSTOM_VIEW_URL in the .env file with the Amplify link.
+Finally, update the `CUSTOM_VIEW_URL` in the .env file with the Amplify link.
