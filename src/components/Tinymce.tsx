@@ -37,6 +37,7 @@ export default function TinyEditor() {
     const context1 = useCustomViewContext();
     const productId = context1.hostUrl.split("products/")[1]
     // const productId = '9eb16815-46ae-4500-96b2-6a961bc61845';
+    const NEW_TINY_MC_API_KEY = process.env.TINY_MCE_API_KEY || "cpk2o1lsm175buob70medg0j2lcnzbb93ogslt3gzfycwq5q"
     const context = useApplicationContext();
     const API_URL = useApplicationContext(
         (context) => (context.environment as unknown as CustomApplicationRuntimeEnvironment).apiUrl
