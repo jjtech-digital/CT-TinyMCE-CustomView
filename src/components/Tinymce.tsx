@@ -321,7 +321,7 @@ export default function TinyEditor() {
             {!showSettings && <div>
                 <h3 style={{ margin: "20px 0 20px 0" }}>Product Description</h3>
                 <Editor
-                    apiKey="wfuimxom2tl3bzeesblvkd2cqt9psx48srxnofonkgw38n4k"
+                    apiKey={NEW_TINY_MC_API_KEY}
                     init={{
                         plugins: [
                             'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
@@ -343,7 +343,7 @@ export default function TinyEditor() {
                     <div key={attributeName}>
                         <h4 style={{ margin: "20px 0 20px 0" }}>{attributeName}</h4>
                         <Editor
-                            apiKey="wfuimxom2tl3bzeesblvkd2cqt9psx48srxnofonkgw38n4k"
+                            apiKey={NEW_TINY_MC_API_KEY}
                             init={{
                                 plugins: [
                                     'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
