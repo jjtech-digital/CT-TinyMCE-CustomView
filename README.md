@@ -63,7 +63,7 @@ Once you have the API key, add it to the relevant configuration file or environm
 
 - Log in to the [AWS Amplify Console.](https://aws.amazon.com/amplify/)
 - Search for AWS Amplify in search bar and click on "create new app".
-<img width="1400" alt="Screenshot 2024-08-13 at 5 11 21 PM" src="https://github.com/user-attachments/assets/84987b4d-65df-4950-a9a0-8cc7bb3c34e9">
+<img width="1400" alt="Screenshot 2024-08-13 at 5 11 21 PM" src="https://github.com/user-attachments/assets/bbd8390a-49d6-48fb-8baa-b892eef89eb0">
 
 
 ### Step 3. Connect Your Repository
